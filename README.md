@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/xpii9qpffetu7nxl/branch/master?svg=true)](https://ci.appveyor.com/project/Xainey/xmiscutilities/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/pxuqp2klswq54o8c/branch/master?svg=true)](https://ci.appveyor.com/project/Xainey/miscutilities/branch/master)
 
 # Notes:
 * This repo is a test run for creating a basic Powershell Desired State Configuration (DSC) resource.
