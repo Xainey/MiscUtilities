@@ -42,7 +42,7 @@ Please check out common DSC Resources [contributing guidelines](https://github.c
 
 * N/A
 
-### {{1.0.0.0}}
+### 1.0.0.0
 
 * Initial release with the following resources:
     * xCreateShortcut
