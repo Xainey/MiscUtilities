@@ -12,7 +12,7 @@
 
 ## Meeting Coding Standards    
 * Localization file structure created in **en-US** dir vs adding at the top of the module `.psm1` file in a **Data** section.
-* ~~Module name prefix was set to *MSFT_*, being that this is reserved for Microsoft it should be changed.``
+* ~~Module name prefix was set to *MSFT_*, being that this is reserved for Microsoft it should be changed.~~
 * MOF based module vs. class based for WMF backwards compatibility.
 * Nested Logic in **Test-TargetResource** contains 3 levels -- low complexity but could be refactored.
 * Localization keys and `$LocalizedData` have all been capitalized. 
