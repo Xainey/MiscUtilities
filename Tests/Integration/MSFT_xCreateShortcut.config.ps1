@@ -6,10 +6,15 @@ $TestShortcut = [PSObject]@{
 }
 
 configuration MSFT_xCreateShortcut_config
-{   
+{
+    param
+    (
+        [string[]] $NodeName = 'localhost'
+    )
+    
     Import-DscResource -ModuleName xMiscUtilities
     
-    node localhost
+    Node $NodeName
     {
         xCreateShortcut Integration_Test
         {
