@@ -1,5 +1,5 @@
-[ClassVersion("1.0.0"), FriendlyName("xCreateShortcut")]
-class MSFT_xCreateShortcut: OMI_BaseResource
+[ClassVersion("1.0.0"), FriendlyName("CreateShortcut")]
+class CreateShortcut: OMI_BaseResource
 {
   [write,ValueMap{"Present", "Absent"},Values{"Present", "Absent"}] string Ensure;
   [Key] string ShortcutName;

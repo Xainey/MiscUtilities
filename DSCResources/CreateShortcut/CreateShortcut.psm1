@@ -1,11 +1,11 @@
 if (Test-Path "${PSScriptRoot}\${PSUICulture}")
 {
-    Import-LocalizedData -BindingVariable LocalizedData -filename MSFT_xCreateShortcut.psd1 -BaseDirectory "${PSScriptRoot}\${PSUICulture}"
+    Import-LocalizedData -BindingVariable LocalizedData -filename CreateShortcut.psd1 -BaseDirectory "${PSScriptRoot}\${PSUICulture}"
 }
 else
 {
     # Fallback to en-US
-    Import-LocalizedData -BindingVariable LocalizedData -filename MSFT_xCreateShortcut.psd1 -BaseDirectory "${PSScriptRoot}\en-US"
+    Import-LocalizedData -BindingVariable LocalizedData -filename CreateShortcut.psd1 -BaseDirectory "${PSScriptRoot}\en-US"
 }
 
 function Test-Writtable

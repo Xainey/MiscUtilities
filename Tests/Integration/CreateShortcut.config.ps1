@@ -5,18 +5,18 @@ $TestShortcut = [PSObject]@{
     TargetPath      = 'C:\Windows\System32\notepad.exe'
 }
 
-configuration MSFT_xCreateShortcut_config
+configuration CreateShortcut_config
 {
     param
     (
         [string[]] $NodeName = 'localhost'
     )
     
-    Import-DscResource -ModuleName xMiscUtilities
+    Import-DscResource -ModuleName MiscUtilities
     
     Node $NodeName
     {
-        xCreateShortcut Integration_Test
+        CreateShortcut Integration_Test
         {
             Ensure          = $TestShortcut.Ensure
             ShortcutPath    = $TestShortcut.ShortcutPath

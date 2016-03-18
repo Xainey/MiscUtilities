@@ -1,15 +1,15 @@
-configuration Sample_xCreateShortcut_AddDesktopShortcut
+configuration Sample_CreateShortcut_AddDesktopShortcut
 {
     param
     (
         [string[]] $NodeName = 'localhost'
     )
 
-    Import-DscResource -Module xMiscUtilities
+    Import-DscResource -Module MiscUtilities
 
     Node $NodeName
     {
-        xCreateShortcut AddPublicNotepadShortcut
+        CreateShortcut AddPublicNotepadShortcut
         {
             Ensure          = "Present"
             ShortcutPath    = "C:\Users\Public\Desktop"
@@ -19,5 +19,5 @@ configuration Sample_xCreateShortcut_AddDesktopShortcut
     }
 }
 
-Sample_xCreateShortcut_AddDesktopShortcut
-Start-DscConfiguration -Verbose -Wait -Force Sample_xCreateShortcut_AddDesktopShortcut
+Sample_CreateShortcut_AddDesktopShortcut
+Start-DscConfiguration -Verbose -Wait -Force Sample_CreateShortcut_AddDesktopShortcut

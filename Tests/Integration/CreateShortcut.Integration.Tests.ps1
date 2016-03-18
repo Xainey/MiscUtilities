@@ -1,5 +1,5 @@
-$Global:DSCModuleName      = 'xMiscUtilities'
-$Global:DSCResourceName    = 'MSFT_xCreateShortcut'
+$Global:DSCModuleName      = 'MiscUtilities'
+$Global:DSCResourceName    = 'CreateShortcut'
 
 #region HEADER
 [String] $moduleRoot = Split-Path -Parent (Split-Path -Parent (Split-Path -Parent $Script:MyInvocation.MyCommand.Path))
