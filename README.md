@@ -1,21 +1,21 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/xpii9qpffetu7nxl/branch/master?svg=true)](https://ci.appveyor.com/project/Xainey/xmiscutilities/branch/master)
 
 # Notes:
-    - This repo is a test run for creating a basic Powershell Desired State Configuration (DSC) resource.
-    - For lack of a better naming sense, I've used xMiscUtilities and xCreateShortcut.
-    - Follows advice and examples from:
-        - [Style Guidelines](https://github.com/PowerShell/DscResources/blob/master/StyleGuidelines.md)
-        - [Design Checklist](https://blogs.msdn.microsoft.com/powershell/2014/11/18/powershell-dsc-resource-design-and-testing-checklist/)
-        - [Daniel Scott-Raynsford DSC Tutorial Series](https://dscottraynsford.wordpress.com/2015/12/14/creating-professional-dsc-resources-part-1/)
-        - [xNetworking Resource](https://github.com/PowerShell/xNetworking/tree/master/DSCResources)
-    - Feel free to make suggestions.
+* This repo is a test run for creating a basic Powershell Desired State Configuration (DSC) resource.
+* For lack of a better naming sense, I've used xMiscUtilities and xCreateShortcut.
+* Follows advice and examples from:
+    * [Style Guidelines](https://github.com/PowerShell/DscResources/blob/master/StyleGuidelines.md)
+    * [Design Checklist](https://blogs.msdn.microsoft.com/powershell/2014/11/18/powershell-dsc-resource-design-and-testing-checklist/)
+    * [Daniel Scott-Raynsford DSC Tutorial Series](https://dscottraynsford.wordpress.com/2015/12/14/creating-professional-dsc-resources-part-1/)
+    * [xNetworking Resource](https://github.com/PowerShell/xNetworking/tree/master/DSCResources)
+* Feel free to make suggestions.
 
 ## Meeting Coding Standards    
-    - Localization file structure created in **en-US** dir vs adding at the top of the module `.psm1` file in a **Data** section.
-    - Module name prefix was set to *MSFT_*, being that this is reserved for Microsoft it should be changed.
-    - MOF based module vs. class based for WMF backwards compatibility.
-    - Nested Logic in **Test-TargetResource** contains 3 levels -- low complexity but could be refactored.
-    - Localization keys and `$LocalizedData` have all been capitalized. 
+* Localization file structure created in **en-US** dir vs adding at the top of the module `.psm1` file in a **Data** section.
+* Module name prefix was set to *MSFT_*, being that this is reserved for Microsoft it should be changed.
+* MOF based module vs. class based for WMF backwards compatibility.
+* Nested Logic in **Test-TargetResource** contains 3 levels -- low complexity but could be refactored.
+* Localization keys and `$LocalizedData` have all been capitalized. 
 
 #xMiscUtilities
 
